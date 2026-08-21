@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: SokSam AI Documentation
+    url: https://soksam.pp.ua/docs
+    about: Read the official documentation before opening a public issue.
+  - name: Security
+    url: https://soksam.pp.ua/security
+    about: Do not publish security-sensitive information in public issues.
+  - name: Official Website
+    url: https://soksam.pp.ua/
+    about: Open the official SokSam AI website.
