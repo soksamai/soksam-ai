@@ -10,8 +10,8 @@
 [![Official Website](https://img.shields.io/badge/Official_Website-soksam.pp.ua-111111?style=for-the-badge)](https://soksam.pp.ua/)
 [![Open SokSam](https://img.shields.io/badge/Open-SokSam_AI-111111?style=for-the-badge)](https://soksam.pp.ua/soksam/chat)
 [![Studio](https://img.shields.io/badge/SokSam_AI-Studio-111111?style=for-the-badge)](https://soksam.pp.ua/soksam/studio)
-[![Documentation](https://img.shields.io/badge/Read-Documentation-111111?style=for-the-badge)](https://soksam.pp.ua/docs)
-[![Telegram](https://img.shields.io/badge/Telegram-Open_Bot-111111?style=for-the-badge)](https://t.me/soksamhelper_bot)
+[![Telegram Channel](https://img.shields.io/badge/Telegram-News_Channel-111111?style=for-the-badge&logo=telegram)](https://t.me/vibescriptaibest)
+[![Telegram Bot](https://img.shields.io/badge/Telegram-AI_Bot-111111?style=for-the-badge&logo=telegram)](https://t.me/vibescripthelper_bot)
 
 <br>
 
@@ -42,8 +42,50 @@ This repository is the **official public GitHub repository for SokSam AI**. It c
 | 🎨 **Image generation** | Create images from written ideas |
 | 🔊 **Voice generation** | Generate spoken audio from text in multiple languages, including Russian |
 | 🗂️ **Projects & memory tools** | Projects, branches, bookmarks and explicit memory |
-| 🌐 **Browser + Telegram** | Access through the web and Telegram |
+| 🌐 **Web + Telegram** | Use SokSam in the browser or as a conversational Telegram bot |
 | 🧩 **SokSam AI Studio** | Desktop-only API workspace with OpenAI-compatible integration |
+
+---
+
+## Two ways to use SokSam AI
+
+### 1. Web application
+
+The main browser experience is available at:
+
+**https://soksam.pp.ua/soksam/chat**
+
+It provides the full SokSam workspace experience, including chat, files, images, projects, memory tools and other web features.
+
+### 2. Telegram AI bot
+
+For users who prefer Telegram instead of a browser, SokSam is also available as a conversational bot:
+
+**[@vibescripthelper_bot](https://t.me/vibescripthelper_bot)**
+
+The bot can be used as a normal Telegram conversation with the AI. Users can ask questions, interact with the assistant and also ask it about the associated Telegram channel and its content.
+
+The primary Telegram news/community channel is:
+
+**[VibeScript AI Best — @vibescriptaibest](https://t.me/vibescriptaibest)**
+
+The channel publishes news and updates about neural networks, AI tools, SokSam AI and related technology topics.
+
+See [`community/TELEGRAM.md`](community/TELEGRAM.md) and [`interfaces/ACCESS.md`](interfaces/ACCESS.md).
+
+---
+
+## Creator
+
+SokSam AI is currently developed by **one primary developer, Viktor**.
+
+The project uses a hybrid development workflow combining traditional software engineering with AI-assisted / vibe-coding techniques. As a rough description of the current workflow, development is approximately **50% direct human implementation and engineering by Viktor and 50% AI-assisted coding, refactoring, exploration and acceleration**.
+
+This does not mean the AI independently owns or operates the project. Viktor defines the product direction, architecture, requirements, integration decisions, testing and final acceptance. AI systems are used as development tools to help create and refine code, including complex scripts and engineering tasks that go well beyond simple beginner examples.
+
+Only the first name **Viktor** is being published at this stage. Additional creator information may be disclosed later.
+
+Read more in [`project/CREATOR.md`](project/CREATOR.md) and [`project/DEVELOPMENT.md`](project/DEVELOPMENT.md).
 
 ---
 
@@ -120,10 +162,11 @@ See [`docs/VOICE.md`](docs/VOICE.md).
 
 ```mermaid
 flowchart LR
-    U[User] --> C[SokSam Chat]
+    U[User] --> C[SokSam Web Chat]
+    U --> TB[Telegram Bot]
     U --> S[SokSam AI Studio - Desktop]
-    U --> T[Telegram]
-    C --> R[Adaptive Router]
+    TB --> R[Adaptive Router]
+    C --> R
     R --> SF[SuperFlash pool]
     R --> ST[Standard pool]
     R --> NV[Nova pool]
@@ -131,16 +174,33 @@ flowchart LR
     C --> F[Files / Images / Voice]
     S --> K[Personal API Key]
     K --> O[OpenAI-compatible integrations]
+    CH[Telegram News Channel] --> U
 ```
 
 This diagram is intentionally conceptual. Private provider identities, credentials, routing weights and infrastructure topology are not published.
 
 ---
 
+## Repository structure
+
+| Area | Purpose |
+|---|---|
+| [`docs/`](docs/) | Technical and product documentation |
+| [`project/`](project/) | Creator, ownership and development workflow |
+| [`community/`](community/) | Official community and Telegram presence |
+| [`interfaces/`](interfaces/) | Ways to access SokSam AI |
+| [`roadmap/`](roadmap/) | Public direction and demo-stage roadmap |
+| [`.github/`](.github/) | GitHub issue and repository configuration |
+
 ## Documentation in this repository
 
 | Document | Purpose |
 |---|---|
+| [`project/CREATOR.md`](project/CREATOR.md) | Public creator information |
+| [`project/DEVELOPMENT.md`](project/DEVELOPMENT.md) | Human + AI-assisted development model |
+| [`community/TELEGRAM.md`](community/TELEGRAM.md) | Official Telegram channel and bot |
+| [`interfaces/ACCESS.md`](interfaces/ACCESS.md) | Web, Telegram and Studio access |
+| [`roadmap/README.md`](roadmap/README.md) | Public deep-demo roadmap |
 | [`docs/CURRENT-STATUS.md`](docs/CURRENT-STATUS.md) | Current deep-demo status and update cadence |
 | [`docs/ADAPTIVE-ROUTING.md`](docs/ADAPTIVE-ROUTING.md) | How the ~50-model adaptive pool behaves publicly |
 | [`docs/MODELS.md`](docs/MODELS.md) | Public tiers and Studio model lineup |
@@ -158,13 +218,14 @@ This diagram is intentionally conceptual. Private provider identities, credentia
 - 🌐 [Official website](https://soksam.pp.ua/)
 - 💬 [Open SokSam AI](https://soksam.pp.ua/soksam/chat)
 - 🧩 [SokSam AI Studio — desktop only](https://soksam.pp.ua/soksam/studio)
+- 📰 [Telegram news channel](https://t.me/vibescriptaibest)
+- 🤖 [Telegram AI bot](https://t.me/vibescripthelper_bot)
 - ✨ [Features](https://soksam.pp.ua/features)
 - 🧠 [Model tiers](https://soksam.pp.ua/models)
 - 📚 [Documentation](https://soksam.pp.ua/docs)
 - 📰 [Changelog](https://soksam.pp.ua/changelog)
 - 🔐 [Security](https://soksam.pp.ua/security)
 - 🛡️ [Privacy](https://soksam.pp.ua/privacy)
-- 🛰️ [Telegram](https://t.me/soksamhelper_bot)
 - 📡 [RSS feed](https://soksam.pp.ua/feed.xml)
 
 More first-party links are collected in [`docs/OFFICIAL-LINKS.md`](docs/OFFICIAL-LINKS.md).
@@ -191,9 +252,9 @@ Do not use public issues for credentials, account-specific private information, 
   <br><br>
   <a href="https://soksam.pp.ua/">Website</a> ·
   <a href="https://soksam.pp.ua/soksam/studio">Studio</a> ·
-  <a href="https://soksam.pp.ua/docs">Docs</a> ·
-  <a href="https://soksam.pp.ua/changelog">Changelog</a> ·
-  <a href="https://t.me/soksamhelper_bot">Telegram</a>
+  <a href="https://t.me/vibescriptaibest">Telegram Channel</a> ·
+  <a href="https://t.me/vibescripthelper_bot">Telegram Bot</a> ·
+  <a href="https://soksam.pp.ua/docs">Docs</a>
   <br><br>
   © 2026 SokSam AI. All rights reserved.
 </div>
