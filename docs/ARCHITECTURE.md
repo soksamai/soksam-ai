@@ -1,54 +1,40 @@
-# SokSam AI public architecture
+# SokSam AI — Public workflow map
 
-This page describes the public product architecture at a high level without exposing private infrastructure or provider-specific secrets.
+This is a **conceptual product map**, not an infrastructure, network or database diagram.
 
 ```mermaid
 flowchart TD
-    U[User] --> CHAT[SokSam Chat]
-    U --> TG[Telegram]
-    U --> STUDIO[SokSam AI Studio - Desktop only]
-
-    CHAT --> ROUTER[Adaptive model router]
-    ROUTER --> SF[SuperFlash model pool]
-    ROUTER --> STD[Standard model pool]
-    ROUTER --> NOVA[Nova model pool]
-    ROUTER --> MAX[Max model pool]
-
-    CHAT --> FILES[File analysis]
-    CHAT --> VISION[Image understanding]
-    CHAT --> IMAGEGEN[Image generation]
-    CHAT --> VOICE[Voice generation]
-    CHAT --> PROJECTS[Projects / branches / bookmarks / memory]
-
-    STUDIO --> KEYS[Personal API keys]
-    KEYS --> COMPAT[OpenAI-compatible clients]
+    U[User] --> C[Chat and research]
+    U --> A[SokSam Agent]
+    U --> F[My Files]
+    U --> S[Studio on desktop]
+    C --> O[Documents, charts, images, presentations]
+    O --> F
+    A --> P[Multi-file projects, history, previews]
+    P --> F
+    S --> K[Personal API keys]
+    K --> I[Compatible applications]
+    S --> B[Shared virtual credits]
+    B -. funds .-> A
+    B -. funds API .-> I
+    B -. funds extra space .-> F
 ```
 
-## Model layer
+## Model selection
 
-SokSam currently operates with a backend pool of around 50 eligible models. The public router maps user traffic to eligible routes inside SuperFlash, Standard, Nova and Max.
+Chat offers **SuperFlash, Standard, Nova and Max**. An adaptive backend pool of **around 50 eligible models** serves the public tiers, with selection varying according to availability and workload. The specific private provider, routing weights and fallbacks are not public. Studio offers a separate **eight-variant** catalog for API use.
 
-A user can remain on the same route for multiple requests. As traffic, availability or workload changes, the router can distribute users across other eligible routes.
+## Workspaces
 
-## Studio layer
+- **Chat:** questions, source-based research, document and data creation, images, voice, and conversation organization.
+- **Agent:** projects spanning multiple files, executed in a server-side isolated environment; progress, checks, revisions and supported previews.
+- **My Files:** personal folders, source and output files, versions, viewers and editing.
+- **Studio:** desktop API-key management, compatible connection information, usage and virtual credit history.
 
-SokSam AI Studio is currently a **desktop-only** developer workspace. It provides API-key management, model selection, balance information and OpenAI-compatible integration details.
+The shared virtual balance funds Agent, API requests and extra My Files storage. Ordinary Chat does not debit Studio credits, though it has its own usage limits.
 
-## Media layer
+## Boundary of this document
 
-The public product includes file workflows, image understanding, image generation and text-to-speech voice generation. Voice requests currently accept up to 500 characters per generation request.
+Not published: credentials, private provider identities, model routing internals, deployment topology, server paths, security-sensitive administrative capabilities, user records or private databases.
 
-## What this document intentionally does not disclose
-
-The following remain private:
-
-- provider credentials;
-- API secrets;
-- private provider model identities where not publicly exposed;
-- routing weights;
-- fallback topology;
-- production host details;
-- private databases and account data;
-- internal administration systems.
-
-This separation allows the public architecture to be understandable without weakening the security of the production service.
+[Agent](AGENT.md) · [Credits](CREDITS.md) · [Files](MY-FILES.md) · [Product overview](PRODUCT-OVERVIEW.md)

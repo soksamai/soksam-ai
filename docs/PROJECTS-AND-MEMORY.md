@@ -1,70 +1,40 @@
-# SokSam AI — Projects, Branches, Bookmarks and Memory
+# Projects, conversation branches, bookmarks and memory
 
-SokSam AI includes organizational tools for work that continues beyond a single prompt or a single conversation.
+SokSam includes several ways to **keep work organized**. Two kinds of project are worth distinguishing: **Chat projects** for conversations and **Agent projects** for a multi-file build.
 
-This page describes those features from a public user-facing perspective and intentionally excludes private database structure, storage paths and internal implementation details.
+## Chat projects
 
-## Projects
-
-Projects provide a way to group related conversations around a common task or topic.
-
-Typical uses include:
-
-- keeping several chats for one larger project together;
-- separating work, study and personal topics;
-- returning to an ongoing task without searching through unrelated conversations;
-- organizing longer-running AI workflows.
+A Chat project groups related conversations around one topic, study plan or assignment. Users can return to an ongoing task and keep related discussions together.
 
 ## Conversation branches
 
-Branches allow users to explore an alternative direction from a point in an existing conversation.
-
-This can be useful when a user wants to:
-
-- try a different approach without losing the original path;
-- compare alternative answers;
-- explore multiple versions of an idea;
-- continue from an earlier point in a different direction.
-
-Each branch represents an alternate conversation path while preserving the original context path separately.
+Branches let a user explore alternatives from a point in a conversation while retaining the earlier direction. They are useful for comparing drafts, approaches and competing ideas without overwriting the original path.
 
 ## Bookmarks
 
-Bookmarks provide a quick way to save important messages or results for later reference.
+Bookmarks help users revisit important explanations, decisions, messages or generated results.
 
-They are useful for keeping track of:
+## Explicit memory tools
 
-- important explanations;
-- useful generated content;
-- decisions made during a project;
-- messages that should be revisited later.
+Memory-related tools preserve selected useful context across interactions where supported. Memory is **not a guarantee** that every detail from every conversation is stored or recalled perfectly.
 
-## Memory-related features
+## Agent project folders and history
 
-SokSam includes explicit memory-related tools intended to help preserve useful context across interactions.
+A **SokSam Agent** project is a different workflow: a dedicated conversation and **folder containing multiple project files**. You can provide starter files, have Agent modify the project over steps, see task progress and history, inspect versions and preview supported websites or games. The project results are connected to **My Files**.
 
-The public goal of memory is to make repeated conversations more useful without requiring the user to re-explain every stable preference or project detail each time.
+Agent is **currently available to signed-in users** through the left menu, not a proposed future feature. [Learn how Agent works](AGENT.md).
 
-Memory should be understood as a product feature rather than a guarantee that every detail from every conversation will always be retained.
+## Where files fit
 
-## How these tools work together
+**My Files** can organize source materials and generated documents, media and project results. It supports folders, search, previews, versions and trash recovery within current product limits. [My Files guide](MY-FILES.md).
 
-A longer SokSam workflow can combine all four concepts:
+## Example
 
-1. Create a project for a larger goal.
-2. Keep related conversations inside that project.
-3. Branch a conversation when exploring alternatives.
-4. Bookmark particularly useful messages.
-5. Use memory-related features to preserve relevant long-term context where appropriate.
+1. Start a Chat project to research an idea.
+2. Branch the discussion to compare approaches; bookmark an important decision.
+3. Open Agent to build a multi-file version of the chosen idea.
+4. Review the Agent history and saved results in My Files.
 
-Together, these tools are part of what makes SokSam AI an AI workspace rather than only a single-turn chatbot.
+Public documentation does not describe private data schemas, memory extraction details, private instructions or administrative access.
 
-## Privacy boundary
-
-This public repository does not document private storage schemas, user-specific database paths, memory extraction rules, internal limits, private prompts or administrative access mechanisms.
-
-## Related documentation
-
-- [`PRODUCT-OVERVIEW.md`](PRODUCT-OVERVIEW.md)
-- [`FEATURES.md`](FEATURES.md)
-- [Web application](../interfaces/WEB-APP.md)
+[Web app](../interfaces/WEB-APP.md) · [Features](FEATURES.md)

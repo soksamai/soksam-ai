@@ -1,51 +1,33 @@
-# SokSam AI current status
+# SokSam AI — Current public status
 
-SokSam AI is currently in a **deep public demo / rapid-development stage**.
+**Reviewed: 14 November 2026.** SokSam AI is an **active deep public demo**: people can use it, while features, model availability, limits, navigation and virtual credit rules continue to evolve.
 
-The product is already usable and its major public workflows are online, but the platform is still changing quickly. Substantial updates are expected approximately every week while the product moves toward a more stable long-term release.
+## Available now
 
-## What is already available
+- Web Chat with **30 UI languages**, streaming conversations, **SuperFlash / Standard / Nova / Max** and adaptive routing across roughly **50 eligible models**.
+- Supported file analysis, web search with sources, deeper research and creation/editing of documents, spreadsheets, charts and presentations.
+- Image understanding and image generation, browser-dependent voice input and supported text-to-speech.
+- Chat projects, branches, bookmarks and explicit memory tools.
+- **SokSam Agent**, available to signed-in users in the left menu: multi-file projects, starter uploads, progress, versions, available checks and supported previews.
+- **My Files** storage with folders, viewers, text/code editing, versions, trash and Agent results; **2 GB** of included space.
+- **SokSam AI Studio** (desktop browsers) with personal API keys, OpenAI-compatible integration details, eight Studio model variants, usage and virtual credit activity.
+- A shared virtual credit balance used for Agent, API and extra storage; initial **$5**, **$1 daily when Studio is opened** and an optional verified **$10 Telegram bonus**.
+- The conversational [Telegram bot](https://t.me/vibescripthelper_bot) and official [news channel](https://t.me/vibescriptaibest).
 
-Current public capabilities include:
+The three credit opportunities have conditions; [read the full rules](CREDITS.md). Ordinary Chat doesn't consume Studio credits but retains usage limits.
 
-- multilingual AI chat;
-- adaptive routing across a backend pool of around 50 eligible models;
-- four stable public chat tiers: SuperFlash, Standard, Nova and Max;
-- supported file analysis;
-- image understanding;
-- image generation;
-- voice generation from text;
-- projects, branches, bookmarks and explicit memory tools;
-- browser and Telegram access;
-- SokSam AI Studio for desktop users;
-- personal API keys and OpenAI-compatible integration through Studio;
-- eight Studio model choices;
-- a $5 starting Studio test balance;
-- email, Google and other authentication capabilities as they are enabled in production.
+## Subscriptions and access
 
-## What is still evolving
+**Free is the only available subscription plan.** Paid plans, card payments and purchased credit top-ups are **not implemented**. **Studio** is desktop-only; that restriction is **not** a blanket restriction on regular Chat or Agent. Agent is **already available**, not a future roadmap promise.
 
-During the deep-demo period, the following can change:
+## Still evolving
 
-- model pool size and routing behavior;
-- model naming and Studio model lineup;
-- usage limits;
-- API details;
-- voice-generation limits and voices;
-- pricing and subscription structure;
-- user interface and product navigation;
-- availability of individual features on mobile versus desktop.
+Supported project previews and file types, model availability, search and voice workflows, UI design, access details, usage limits, storage expansions and credit conditions can change during the demo. Generated work and research require user review.
 
-## Subscription status
+## History and publication boundary
 
-The currently implemented subscription tier is **Free**. Paid subscription plans are not yet implemented.
+See the [official changelog](https://soksam.pp.ua/changelog) for release dates and descriptions. No weekly release schedule is guaranteed.
 
-## Update cadence
+This repository publishes the public product and documentation only — **not the full production code, internal infrastructure or private account information**.
 
-The project is being actively developed and is expected to receive meaningful updates on a near-weekly basis. The official changelog remains the best place to check product changes:
-
-https://soksam.pp.ua/changelog
-
-## Production versus public repository
-
-This GitHub repository documents the public product and its stable first-party identity. Private source code, credentials, provider configuration, routing weights and infrastructure secrets are intentionally not published.
+[Product overview](PRODUCT-OVERVIEW.md) · [Agent](AGENT.md) · [My Files](MY-FILES.md) · [Studio](STUDIO.md)

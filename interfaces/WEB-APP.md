@@ -1,73 +1,35 @@
-# SokSam AI — Web Application
+# SokSam AI — Web application
 
-The SokSam AI web application is the primary browser-based workspace.
+**[Open SokSam](https://soksam.pp.ua/soksam/chat)** to use a connected browser workspace for conversation, research, content creation and project building.
 
-Official application:
+## Chat
 
-https://soksam.pp.ua/soksam/chat
+Sign in, start or resume a conversation, choose **SuperFlash, Standard, Nova or Max**, and describe the task. The chat supports streaming answers, file attachments, image understanding and generation, source-based web searches, deeper research, and creating or editing supported Word/PDF documents, Excel/CSV tables, charts and PowerPoint presentations.
 
-## Main experience
+Chat projects, branches, bookmarks and explicit memory tools support longer tasks. Progress can show stages such as searching, reading and processing files or creating an artifact.
 
-The web application combines several AI workflows in one interface:
+Voice input depends on browser support. Generated speech is available for supported text and languages; see [Voice](../docs/VOICE.md).
 
-- streaming AI chat;
-- public model-tier selection;
-- file and document attachments;
-- image understanding;
-- image generation;
-- voice-related tools;
-- projects and conversation organization;
-- bookmarks and memory-related features;
-- multilingual settings;
-- account and authentication flows;
-- access to SokSam AI Studio on supported desktop browsers.
+## Agent in the left menu
 
-## Conversation workflow
+**SokSam Agent is already available to signed-in users.** Select **Agent** in the left menu, describe a multi-file project, optionally upload starter files by drag and drop, and follow planning, file changes and available checks. Review saved versions and supported site/game previews. Agent runs in an isolated server-side environment and keeps project results connected to My Files.
 
-A typical web flow is:
+[How Agent works](../docs/AGENT.md)
 
-1. Open SokSam AI and sign in or create an account.
-2. Open or create a conversation.
-3. Choose a public SokSam model tier.
-4. Send a text message and optionally attach supported files or images.
-5. Receive a streaming response.
-6. Continue the conversation or organize it into a project.
-7. Bookmark useful messages or explore alternate branches where available.
+## My Files
 
-## Public model tiers
+My Files stores sources, generated documents and images, and Agent folders. Organize with folders, search, rename, move, copy, download, recent items, supported viewers, text/code editing, saved versions and trash recovery. Basic space is **2 GB**. Extra space can use virtual Studio credits.
 
-- **SokSam SuperFlash** — speed-focused
-- **SokSam Standard** — balanced everyday work
-- **SokSam Nova** — deeper tasks
-- **SokSam Max** — maximum public capability
+[My Files](../docs/MY-FILES.md) · [Attachment limits are separate](../docs/FILE-SUPPORT.md)
 
-The public tier is the product-facing choice. Private model-provider identities and internal routing details are intentionally not exposed.
+## Studio and credits
 
-## Responsive use
+[Studio](https://soksam.pp.ua/soksam/studio) is a **desktop-browser** area for API keys, compatible integrations and credit activity. Studio credits fund Agent, API calls and extra storage; ordinary Chat does not use them. The current subscription is **Free**; paid purchases are not implemented.
 
-The main chat experience is designed to work across modern browsers and adapts to different screen sizes. Some advanced product areas have different device requirements.
+[Studio](../docs/STUDIO.md) · [Exact credit rules](../docs/CREDITS.md)
 
-In particular, **SokSam AI Studio is currently desktop-only**.
+## Other ways to access
 
-## Voice
+The [Telegram bot](https://t.me/vibescripthelper_bot) is a separate conversational option with its own supported features, not a full copy of every web workflow. [Telegram guide](../community/TELEGRAM.md).
 
-The browser experience includes voice-related functionality where the user's browser supports the required capabilities. SokSam also provides generated spoken audio from text in multiple languages, with a current public limit of 500 characters for voice generation.
-
-## Files and images
-
-Users can attach supported documents, spreadsheets, text files and images directly to conversations. See [`../docs/FILE-SUPPORT.md`](../docs/FILE-SUPPORT.md) for the current public format and upload-limit documentation.
-
-## Telegram alternative
-
-Users who prefer a messaging interface instead of the browser can use the Telegram AI bot:
-
-https://t.me/vibescripthelper_bot
-
-See [`../community/TELEGRAM.md`](../community/TELEGRAM.md).
-
-## Related links
-
-- Website: https://soksam.pp.ua/
-- Web application: https://soksam.pp.ua/soksam/chat
-- Studio: https://soksam.pp.ua/soksam/studio
-- Public feature guide: [`../docs/FEATURES.md`](../docs/FEATURES.md)
+The product is a deep public demo. Test important outputs, and check live interfaces for changing limits or availability.

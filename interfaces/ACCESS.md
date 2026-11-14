@@ -1,27 +1,16 @@
 # Ways to access SokSam AI
 
-SokSam AI is available through several public interfaces.
+| Where | What it is for | Open |
+|---|---|---|
+| **Web Chat** | Questions, research, files, content creation and conversation organization | https://soksam.pp.ua/soksam/chat |
+| **SokSam Agent** | Multi-file websites, games, apps, bots and tools | Sign in to the web app, then select **Agent** in the left menu |
+| **My Files** | Personal folders, source materials, project results and versions | Signed-in web workspace |
+| **SokSam AI Studio** | API keys, model options and shared virtual credit activity | https://soksam.pp.ua/soksam/studio |
+| **Telegram AI bot** | Conversational AI and supported bot-specific workflows | https://t.me/vibescripthelper_bot |
+| **Telegram channel** | SokSam and AI news | https://t.me/vibescriptaibest |
 
-## Web application
+**Studio requires a computer / desktop browser.** This is not a blanket access limit for Chat or Agent. The Agent is available to any signed-in user, and does not require a separate verified direct URL.
 
-Main chat: https://soksam.pp.ua/soksam/chat
+The web app and Telegram bot are not functionally identical. In particular, do not assume that Agent, file storage, Studio and every content-creation workflow are available in Telegram.
 
-The browser application is the primary full product interface for chat, files, images, projects, memory tools and related features.
-
-## Telegram bot
-
-Bot: https://t.me/vibescripthelper_bot
-
-The Telegram bot provides a simpler conversational interface for users who prefer to use SokSam directly inside Telegram.
-
-## Telegram news channel
-
-Channel: https://t.me/vibescriptaibest
-
-The channel publishes news and updates about AI, neural networks, tools and SokSam AI.
-
-## SokSam AI Studio
-
-Studio: https://soksam.pp.ua/soksam/studio
-
-SokSam AI Studio is currently available only on computers / desktop browsers. It provides personal API keys, OpenAI-compatible integration information, usage and balance tools, and the Studio model lineup.
+[Web app guide](WEB-APP.md) · [Agent guide](../docs/AGENT.md) · [Virtual credits](../docs/CREDITS.md)

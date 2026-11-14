@@ -1,59 +1,54 @@
-# SokSam AI Studio
+# SokSam AI Studio — developer access and shared credits
 
-**SokSam AI Studio** is the developer-facing workspace for creating SokSam API keys and connecting SokSam models to external applications through an OpenAI-compatible integration flow.
+**[Open Studio](https://soksam.pp.ua/soksam/studio)**
 
-Official Studio URL: https://soksam.pp.ua/soksam/studio
+> **Device requirement:** Studio is currently intended for **computers / desktop browsers**. This restriction does not automatically apply to Chat or Agent.
 
-> **Availability:** Studio is currently available **only on computers / desktop browsers**. It is not currently presented as a full mobile Studio experience.
+Studio helps developers connect compatible software to SokSam AI and manage the virtual balance also used by Agent and My Files.
 
-## What Studio provides
+## Developer workflow
 
-Studio currently includes:
+1. Sign in to Studio on a desktop browser.
+2. Create and manage **personal API keys**. Do not share or publish them.
+3. Copy the **current base URL and model identifiers from live Studio**.
+4. Configure an application or tool that supports the appropriate **OpenAI-compatible API format**.
+5. Review **usage, balance, credits earned and credits spent**.
 
-- creation and management of personal SokSam API keys;
-- OpenAI-compatible connection information;
-- the base URL and integration details needed by compatible clients;
-- model selection;
-- balance and usage information;
-- a **$5 starting balance** intended for initial testing and experimentation.
+Compatibility describes an API format, **not an official partnership** with model providers or guaranteed support for every third-party feature.
 
-An API key created in Studio can be used with software that supports the compatible API format, subject to the current SokSam limits and model availability.
+## Eight Studio model choices
 
-## Current Studio model lineup
-
-Studio currently exposes eight model choices:
-
-| Studio model | Positioning |
+| Studio choice | General positioning |
 |---|---|
-| **SokSam SuperFlash** | Fastest Studio route |
-| **SokSam Standard Minimum** | Lighter Standard route |
-| **SokSam Standard Maximum** | Stronger Standard route |
-| **SokSam Nova Minimum** | Lighter Nova route |
-| **SokSam Nova Maximum** | Stronger Nova route |
-| **SokSam Max Minimum** | Entry Max route |
-| **SokSam Max Medium** | Mid-level Max route |
-| **SokSam Max Maximum / High** | Highest Studio Max route |
+| **SokSam SuperFlash** | Speed-focused |
+| **SokSam Standard Minimum** | Lighter Standard |
+| **SokSam Standard Maximum** | Stronger Standard |
+| **SokSam Nova Minimum** | Lighter Nova |
+| **SokSam Nova Maximum** | Stronger Nova |
+| **SokSam Max Minimum** | Entry Max |
+| **SokSam Max Medium** | Mid-level Max |
+| **SokSam Max Maximum / High** | Highest Studio Max |
 
-The Studio lineup is distinct from the simpler four-tier chat interface. It gives developers more control over the capability level they want to call through an API key.
+These eight variants are **not** the same interface as Chat's four public tiers. Model IDs, pricing, endpoint details and limits should be read from the live product.
 
-## OpenAI-compatible workflow
+## A shared virtual balance
 
-Studio is designed so compatible developer tools can be configured with:
+Studio credit is a **virtual USD-denominated balance** used inside SokSam AI for:
 
-1. a SokSam API key;
-2. the OpenAI-compatible base URL shown in Studio;
-3. one of the supported SokSam Studio model choices.
+- Agent work, including planning and final review;
+- API requests made through personal Studio keys;
+- additional My Files storage beyond the included **2 GB**.
 
-The exact endpoint details and current model identifiers should always be taken from the live Studio interface because they can evolve during the demo period.
+Ordinary Chat does **not** use this Studio balance, although normal Chat usage limits continue to apply. Agent can pause if it lacks credit for the next step.
+
+As checked on **14 November 2026**, the account receives **$5 once** as a starter balance. Opening Studio can grant **$1 once per UTC day** (new day starts at 00:00 UTC). An optional **one-time $10 Telegram bonus** has additional verified channel subscription and message conditions. The complete steps and cautions are in **[CREDITS.md](CREDITS.md)**.
+
+These credits are **not withdrawable money**. They are not proof of a paid plan or cash purchase mechanism.
 
 ## Subscription status
 
-At this time, **Free is the only implemented subscription tier**. Paid subscription plans are not yet available.
+**Free** is the only available plan. Paid subscriptions, payments by card and credit top-up purchases are **not implemented**. Terms and limits can change during the demo; always check Studio for current conditions.
 
-The $5 starting balance is intended to make testing possible before future subscription and billing options are introduced.
+[Credits and Telegram bonus](CREDITS.md) · [Agent](AGENT.md) · [My Files](MY-FILES.md) · [Public models](MODELS.md)
 
-## Development status
-
-Studio is part of the current **deep-demo / rapid-development** version of SokSam AI. It is already usable, but model names, limits, balance rules, pricing and integration details may change as the platform is updated.
-
-Never publish SokSam API keys in GitHub issues, repositories, screenshots, browser URLs or public logs.
+**Security:** never publish API keys, credentials, private usage records or tokens in GitHub issues, screenshots, repositories or logs.

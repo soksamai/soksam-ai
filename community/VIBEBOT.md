@@ -1,65 +1,21 @@
 # VibeScript Telegram AI Bot
 
-The public Telegram AI bot is available at:
+**Official bot:** https://t.me/vibescripthelper_bot
 
-https://t.me/vibescripthelper_bot
-
-It provides an alternative way to interact with AI directly inside Telegram for users who do not want to use the browser application.
-
-## User-facing capabilities
-
-The Telegram experience includes supported workflows such as:
-
-- conversational AI;
-- multiple public model modes/tiers;
-- image analysis from photos sent in Telegram;
-- user profile and memory-related features;
-- language selection;
-- information about the associated VibeScript AI news channel;
-- coding-oriented assistance.
+This bot offers a conversational AI option directly in Telegram. Supported bot workflows include AI chat, model modes, image understanding from photos, language selection, memory-related features, information about the news channel and coding-oriented assistance.
 
 ## Vibe Bot Coding
 
-One of the bot's specialized workflows is a coding/project mode designed to help generate multi-file software projects from a user's description.
+The bot's separate coding workflow can help turn a description into related project files, organize a multi-file result, provide a packaged project and continue refining it. Prompt-improvement tools can help clarify a coding request before generation.
 
-At a public level, the workflow can:
+**Do not confuse this with the browser-based SokSam Agent.** Agent is a signed-in web workflow with its own project folders, task progress, checks, saved versions, supported previews and connection to My Files. These are separate interfaces and should not be described as identical.
 
-- accept a description of the desired software project;
-- generate multiple related project files;
-- organize files into a project structure;
-- return a packaged project for the user;
-- continue working on the project in follow-up interactions.
+[Web Agent guide](../docs/AGENT.md)
 
-Private generation protocols, internal prompts, model-provider identities and implementation details are intentionally not published.
+## Channel and virtual-credit bonus
 
-## Prompt improvement
+The official channel is **[VibeScript AI Best](https://t.me/vibescriptaibest)**. Studio also offers an optional **one-time $10 virtual-credit bonus** when the user initiates it in Studio, subscribes to that channel and, after subscribing, sends **10 qualifying unique text messages** to this AI bot. Conditions are checked automatically; merely subscribing or sending one message is insufficient.
 
-The Telegram experience also includes prompt-improvement assistance for turning rough coding ideas into clearer, more structured instructions before project generation.
+[All bonus rules](../docs/CREDITS.md) · [Web Chat](https://soksam.pp.ua/soksam/chat) · [Studio (desktop)](https://soksam.pp.ua/soksam/studio)
 
-## Images
-
-Users can send supported images/photos with context and ask the bot questions about the visual content.
-
-## Channel relationship
-
-The associated public Telegram channel is:
-
-https://t.me/vibescriptaibest
-
-It publishes news and updates about AI, neural networks, useful AI tools, SokSam AI and related technology topics.
-
-The bot can also help users understand or navigate information related to the channel where supported.
-
-## Web alternative
-
-The full browser-based SokSam AI workspace is available at:
-
-https://soksam.pp.ua/soksam/chat
-
-For developer/API workflows, SokSam AI Studio is available on desktop at:
-
-https://soksam.pp.ua/soksam/studio
-
-## Privacy and implementation boundary
-
-This repository does not publish Telegram bot tokens, private prompts, provider identities, administrative commands, internal moderation rules, private service endpoints or production infrastructure details.
+The public repository does not publish bot tokens, private instructions, private providers, administrative commands or private infrastructure details.

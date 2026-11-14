@@ -1,27 +1,23 @@
 # SokSam AI on Telegram
 
-SokSam AI has two primary Telegram destinations.
+SokSam maintains a news channel and a conversational AI bot:
 
-## Main news and community channel
+- **[VibeScript AI Best — @vibescriptaibest](https://t.me/vibescriptaibest):** news and updates about AI tools, neural networks, SokSam AI and related topics.
+- **[Official AI bot — @vibescripthelper_bot](https://t.me/vibescripthelper_bot):** conversations and supported Telegram-specific AI workflows.
 
-**VibeScript AI Best**  
-https://t.me/vibescriptaibest
+The Telegram bot is **not identical** to all features of the browser-based SokSam app. For **SokSam Agent** multi-file projects, **My Files** and **Studio**, use the supported web interface.
 
-This is the main Telegram channel associated with the project. It publishes news and updates about neural networks, AI tools, SokSam AI and related technology topics.
+## Optional one-time Studio credit bonus
 
-## Telegram AI bot
+As checked on **14 November 2026**, eligible users can receive **$10 in virtual Studio credits** after completing all verified steps:
 
-**@vibescripthelper_bot**  
-https://t.me/vibescripthelper_bot
+1. Start the Telegram bonus process **inside Studio**.
+2. Subscribe to the official **@vibescriptaibest** channel.
+3. **After subscribing**, send **10 qualifying unique text messages** to **@vibescripthelper_bot**.
+4. Have SokSam automatically verify the subscription and message conditions.
 
-The bot provides a conversational AI experience directly inside Telegram for users who prefer not to use the web application in a browser.
+**A single message or a channel subscription alone does not qualify.** The reward is one-time and subject to current Studio terms. Virtual credits are not cash.
 
-Users can interact with the AI in a normal Telegram conversation and can also ask the bot about the associated Telegram channel and its content.
+[Full credit terms](../docs/CREDITS.md) · [Open SokSam Chat](https://soksam.pp.ua/soksam/chat) · [Studio (desktop)](https://soksam.pp.ua/soksam/studio)
 
-## Web alternative
-
-The full browser application remains available at:
-
-https://soksam.pp.ua/soksam/chat
-
-The Telegram bot is an alternative access path rather than a replacement for every web-only feature.
+For the bot's own coding mode, see [Vibe Bot](VIBEBOT.md), which is distinct from the web Agent experience.

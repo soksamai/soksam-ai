@@ -1,154 +1,72 @@
-# SokSam AI — Public Product Overview
+# SokSam AI — Public product overview
 
-SokSam AI is a multilingual artificial intelligence workspace that combines conversational AI, file and image work, voice generation, project organization and developer access in one product family.
+**SokSam AI** is a multilingual AI workspace where a user can **ask, research, create and build**. It connects Chat, a project-building Agent, personal My Files storage and developer Studio without requiring users to think in terms of private infrastructure.
 
-This document intentionally describes the product from a public, user-facing perspective. Private provider identities, credentials, internal routing rules, administrative mechanisms and production infrastructure are not part of this document.
+The product is in a **deep public demo / active-development stage**. It is usable now, but interfaces, limits and virtual credit terms can change. See the [official changelog](https://soksam.pp.ua/changelog) for dated updates.
 
-## Product status
+## Four connected parts
 
-SokSam AI is currently in a **deep public demo / rapid-development stage**. The product is already usable, but development is active and substantial updates are expected regularly, approximately every week.
+| Part | What to do with it |
+|---|---|
+| **Chat** | Ask questions, search with sources, analyze files and create documents, charts, presentations or images |
+| **Agent** | Build or revise a multi-file website, game, app, bot or other supported project |
+| **My Files** | Store inputs and results, search folders, preview, edit, revisit versions and recover items |
+| **Studio** | Manage personal API keys, compatible integrations, model selection, credit balance and activity |
 
-During this stage, interfaces, limits, model availability, pricing and individual experimental capabilities may change.
+**Browser:** https://soksam.pp.ua/soksam/chat  
+**Agent:** select **Agent** in the left menu once signed in  
+**Studio:** https://soksam.pp.ua/soksam/studio (**desktop browsers only**)
 
-## Main ways to use SokSam AI
+For conversational Telegram access, use [@vibescripthelper_bot](https://t.me/vibescripthelper_bot). Its supported bot features are not identical to all web, Agent or Studio features.
 
-### Web application
+## Chat and research
 
-The primary browser application is available at:
+SokSam's four public Chat tiers are **SuperFlash** (speed), **Standard** (everyday balance), **Nova** (more demanding tasks) and **Max** (highest public capability). The product offers a **30-language interface** and adaptive routing across approximately **50 eligible underlying models**. Pool size is an approximate public description, not a guarantee of any fixed backend model.
 
-https://soksam.pp.ua/soksam/chat
+Chat can search the web with sources, compare findings in deeper research, read supported attachments, create and edit **Word/PDF**, **Excel/CSV**, charts and **PowerPoint** materials, understand and generate images, and use supported browser voice input and generated speech. Supported tools, formats and voices may vary. Steps such as source reading and file preparation can appear in the task progress.
 
-The web experience brings together chat, model selection, files, images, voice tools, projects, bookmarks, memory-related features and account settings.
+For longer work, chat projects, alternative branches, bookmarks and explicit memory tools help users continue without treating memory as perfect or automatic.
 
-### Telegram AI bot
+[Research](SEARCH-AND-RESEARCH.md) · [Creation](CREATE-AND-EXPORT.md) · [Projects and memory](PROJECTS-AND-MEMORY.md)
 
-Users who prefer Telegram can interact with the AI directly through:
+## Agent: build a project
 
-https://t.me/vibescripthelper_bot
+**Agent is already available to signed-in users.** Open it in the browser's left navigation. It accepts an instruction and uploaded starter files, works on several project files, shows its actions and can run available checks and attempt corrections. Each project has its own folder, conversation and versions; supported websites and games can be previewed.
 
-The Telegram bot provides a conversational alternative to the browser experience and can also help users learn about the associated Telegram channel.
+Examples: a small café website, a browser game, a revised existing application or a tool that processes tables.
 
-### SokSam AI Studio
+Agent works in an isolated environment on SokSam servers. It does not promise support for every stack, error-free output, external deployment or unrestricted access to the user's own machine and accounts.
 
-Developer access is available through:
+[Agent details](AGENT.md)
 
-https://soksam.pp.ua/soksam/studio
+## My Files: sources and finished results
 
-Studio is currently **desktop-only** and is designed for creating and managing SokSam API keys and connecting compatible applications through an OpenAI-compatible workflow.
+My Files provides folders, uploads, searching, recent files, renaming, moving, copying, downloading, file versions, trash with recovery, PDF/image viewers, supported media playback, text/code editing and supported ZIP handling. Documents, images and Agent project outputs can be organized there.
 
-## Core capabilities
+The base storage is **2 GB**. Additional storage uses virtual credits; storage and chat attachment limits are different. Antivirus-check statuses are visible but cannot guarantee complete protection.
 
-### Conversational AI
+[My Files guide](MY-FILES.md)
 
-SokSam AI provides streaming conversations with four stable public tiers:
+## Studio and one virtual credit balance
 
-- **SokSam SuperFlash** — focused on speed and lightweight tasks
-- **SokSam Standard** — balanced everyday work
-- **SokSam Nova** — deeper and more demanding tasks
-- **SokSam Max** — the highest-capability public tier
+Studio is the **desktop-only developer workspace** for creating and managing API keys, viewing the current OpenAI-compatible connection details, selecting among eight Studio model variants and reviewing usage, earnings and spending. Compatible API format does not imply a partnership with model providers or universal client support.
 
-The public tier names remain stable while SokSam can dynamically select an eligible internal model from its adaptive pool.
+The **shared Studio virtual credit balance** is shown in USD, **not redeemable for cash**, and pays for **Agent work, Studio API requests and extra file storage**. Ordinary Chat does **not** deduct Studio credits; other usage limits remain.
 
-### Adaptive model pool
+As checked on **14 November 2026**, an account can receive **$5 once**, **$1 once per UTC day by opening Studio**, and a **one-time $10 Telegram bonus** after starting it in Studio, subscribing to the official channel and sending ten qualifying unique text messages to the official AI bot after subscribing. Verification is automatic. Read [CREDITS.md](CREDITS.md) for the full conditions.
 
-The current production platform works with a pool of **around 50 eligible models** distributed across the public SokSam tiers.
+Only the **Free** subscription plan exists today. Card payments, paid plans and purchased top-ups are not implemented.
 
-The internal selection can change according to factors such as the chosen tier, availability and workload. A user may stay on the same eligible model for several consecutive requests, while higher concurrency can cause work to be distributed differently.
+[Studio](STUDIO.md) · [Virtual credits](CREDITS.md)
 
-This is intentionally a public conceptual description. Exact routing rules, weights, fallback order and internal provider details are private.
+## Recent evolution and next steps
 
-### Files and documents
+The currently documented workspace brings together multi-file Agent projects with progress and supported previews, personal storage with versions and viewers, improved ways to continue interrupted work, and clearer Studio credit activity. Better multilingual documentation and navigational clarity remain ongoing priorities. These are product directions and current workflows, **not invented release dates**.
 
-SokSam can work with supported documents, spreadsheets, text files, images, archives and email files. Depending on the file type, the application can extract useful content and make it available to the conversation for analysis.
+## Creator and public scope
 
-Current public file documentation is available in [`FILE-SUPPORT.md`](FILE-SUPPORT.md).
+SokSam AI is led by **Viktor**, founder, owner and primary developer. Engineering is described approximately as **50% direct human work / 50% AI-assisted development**, varying by feature; this is not an audited code-authorship measure. [Creator](../project/CREATOR.md) · [Development workflow](../project/DEVELOPMENT.md).
 
-### Image understanding
+This is a **public documentation repository**, not a release of the full proprietary production code. Sensitive private configuration, credentials, account data and routing details are excluded. Follow [SECURITY.md](../SECURITY.md) for sensitive reporting.
 
-Users can attach images and ask questions about visual content, screenshots, diagrams, charts and other supported images.
-
-### Image generation
-
-SokSam includes image-generation workflows integrated with the conversational experience. Generated images can be returned as conversation artifacts.
-
-### Voice generation
-
-SokSam includes text-to-speech generation in multiple languages, including Russian. The current public text limit is **500 characters per generation**.
-
-See [`VOICE.md`](VOICE.md).
-
-### Projects and organization
-
-SokSam includes tools for organizing longer work:
-
-- projects for grouping related conversations;
-- conversation branches for exploring alternative directions;
-- bookmarks for saving important messages;
-- explicit memory-related tools for persistent user context.
-
-These capabilities are designed to make SokSam useful for work that continues beyond a single chat session.
-
-## SokSam AI Studio
-
-Studio is the developer-oriented part of SokSam AI.
-
-Current public capabilities include:
-
-- creation and management of personal API keys;
-- OpenAI-compatible integration guidance;
-- usage and balance information;
-- multiple SokSam model variants;
-- a **$5 starting test balance**;
-- connection to compatible third-party applications and developer tools.
-
-Current Studio models:
-
-1. SokSam SuperFlash
-2. SokSam Standard Minimum
-3. SokSam Standard Maximum
-4. SokSam Nova Minimum
-5. SokSam Nova Maximum
-6. SokSam Max Minimum
-7. SokSam Max Medium
-8. SokSam Max Maximum / High
-
-The only currently implemented subscription tier is **Free**. Paid subscriptions are not yet available.
-
-See [`STUDIO.md`](STUDIO.md).
-
-## Multilingual interface
-
-The SokSam web interface currently supports **30 UI languages**, covering major European languages as well as Arabic, Chinese, Japanese and Korean.
-
-See [`LANGUAGES.md`](LANGUAGES.md) for the public language list.
-
-## Telegram news and community
-
-The primary Telegram news/community channel is:
-
-https://t.me/vibescriptaibest
-
-It publishes news and updates about neural networks, AI tools, SokSam AI and related technology topics.
-
-See [`../community/TELEGRAM.md`](../community/TELEGRAM.md).
-
-## Development model
-
-SokSam AI is currently developed primarily by **Viktor**, the founder, owner and primary developer of the project.
-
-Development combines direct software engineering with AI-assisted / vibe-coding workflows. The current development balance is publicly described approximately as **50% direct human development and 50% AI-assisted development**. This is a workflow description, not a strict measurement of lines of code.
-
-See [`../project/CREATOR.md`](../project/CREATOR.md) and [`../project/DEVELOPMENT.md`](../project/DEVELOPMENT.md).
-
-## Public links
-
-- Website: https://soksam.pp.ua/
-- Web app: https://soksam.pp.ua/soksam/chat
-- Studio: https://soksam.pp.ua/soksam/studio
-- Telegram channel: https://t.me/vibescriptaibest
-- Telegram bot: https://t.me/vibescripthelper_bot
-- GitHub: https://github.com/soksamai/soksam-ai
-
-## Publication boundary
-
-The public SokSam documentation deliberately does **not** publish credentials, private model-provider identities, private model IDs, internal routing logic, internal service endpoints, production filesystem paths, administrative security details or infrastructure topology.
+[Official links](OFFICIAL-LINKS.md) · [Feature guide](FEATURES.md) · [Current status](CURRENT-STATUS.md)

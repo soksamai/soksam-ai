@@ -1,49 +1,44 @@
-# SokSam AI — File Support
+# SokSam AI — Files and attachments
 
-SokSam AI can analyze supported files as part of a conversation. This page describes the current public file experience without exposing private storage or processing infrastructure.
+SokSam supports both **Chat attachments** for analysis and **My Files** as personal storage. These are related but **different** workflows with distinct limits.
 
-## Supported categories
+## Chat attachment categories
 
-| Category | Common supported formats | Typical use |
+| Category | Examples | Common task |
 |---|---|---|
-| Documents | PDF, DOCX, PPTX | Read, summarize and discuss document content |
-| Spreadsheets | XLSX, CSV | Extract and reason about tabular data |
-| Text | TXT, Markdown | Analyze notes, source text and structured writing |
-| Images | JPEG, PNG, WebP, GIF | Visual understanding and question answering |
-| Archives | ZIP | Work with supported extracted contents |
-| Email files | EML | Analyze message headers/body and supported content |
+| Documents | PDF, DOCX, PPTX | Read, summarize or discuss material |
+| Spreadsheets | XLSX, CSV | Analyze tables and calculations |
+| Text | TXT, Markdown | Read notes or code |
+| Images | JPEG, PNG, WebP, GIF | Discuss visual content |
+| Archives | ZIP | Process supported archive contents |
+| Email files | EML | Review supported mail content |
 
-Actual behavior can depend on file contents and the active product interface.
+Availability depends on the file content, active product workflow and current demo limits.
 
-## Current upload limits
+## Chat-message upload limits
 
-The current web demo supports up to:
+The previously published demo reference for **Chat attachments** is:
 
-- **10 files per message**;
-- **12 MB per individual file**;
-- **25 MB total per message**.
+- up to **10 attached files per message**;
+- up to **12 MB per individual attached file**;
+- up to **25 MB total attachments per message**.
 
-These are demo-stage limits and may change as SokSam AI evolves.
+These numbers are **not a My Files quota**, **not a universal storage-file-size limit**, and **not an Agent upload promise**. Limits can change; check the live interface before uploading.
 
-## User workflow
+## My Files is separate
 
-A typical file workflow is:
+The personal **My Files** workspace has an included total capacity of **2 GB**, with more space available through **virtual Studio credits**. It supports folders, versions, searching, recent items, moving, copying, downloading, trash recovery, PDF/image viewers, supported media playback, text/code editing and ZIP operations within product limits.
 
-1. Attach a supported file to a conversation.
-2. Add a question or instruction.
-3. SokSam validates the upload and prepares usable content for analysis.
-4. The conversation can then reference relevant information from the attached material.
+Documents, generated images and Agent project outputs can be organized there. Agent projects have dedicated folders and work histories.
 
-## Images as attachments
+[My Files guide](MY-FILES.md) · [Agent](AGENT.md) · [Virtual credits](CREDITS.md)
 
-Supported images can also be used for visual understanding. Users can ask about screenshots, diagrams, charts, interfaces, photos or other supported visual material.
+## Creating output files
 
-## Safety and privacy boundary
+SokSam Chat can also create or edit supported Word/PDF documents, Excel/CSV data, charts and PowerPoint slides, returning results that can be saved or downloaded. See [Create & export](CREATE-AND-EXPORT.md).
 
-This public documentation does not describe internal file-storage locations, private processing services, infrastructure paths, storage credentials or security-sensitive implementation details.
+## Checks and privacy
 
-## Related documentation
+File antivirus-check statuses may be shown in My Files. They do not guarantee absolute safety. Do not submit secrets to public GitHub Issues. This documentation does not expose private storage paths, production credentials or account data.
 
-- [`PRODUCT-OVERVIEW.md`](PRODUCT-OVERVIEW.md)
-- [`FEATURES.md`](FEATURES.md)
-- [`VOICE.md`](VOICE.md)
+[Features](FEATURES.md) · [Product overview](PRODUCT-OVERVIEW.md)
